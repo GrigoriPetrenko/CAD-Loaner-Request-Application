@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view">
+    <sysrule_view action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <device_type>browser</device_type>
+        <match_conditions>ALL</match_conditions>
+        <name>User see only MyView</name>
+        <order>100</order>
+        <overrides_user_preference>true</overrides_user_preference>
+        <script><![CDATA[(function overrideView(view, is_list){
+if(!gs.hasRole('x_cdltd_loaner_req.admin')){
+answer = 'myView';  //  set the new view to answer
+}						
+})(view, is_list);
+]]></script>
+        <sys_class_name>sysrule_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-02 20:52:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e413bb6fd2912107f445309e5e1dfaf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>User see only MyView</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">4e39e7450c2812107f446a79afd08b9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">4e39e7450c2812107f446a79afd08b9d</sys_scope>
+        <sys_update_name>sysrule_view_8e413bb6fd2912107f445309e5e1dfaf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 21:20:50</sys_updated_on>
+        <table>x_cdltd_loaner_req_loaner_request</table>
+        <view/>
+    </sysrule_view>
+</record_update>
